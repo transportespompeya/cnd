@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Portal CND</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+  function abrirEnlace(url) {
+    if (url === "horariospre.html") {
+      var password = prompt("Ingrese la contraseña para acceder:");
+      if (password === "L3151") { // Reemplaza "tu_contraseña" con la contraseña deseada
+        window.open(url, '_blank');
+      } else {
+        alert("Contraseña incorrecta. Intente nuevamente.");
+      }
+    } else {
+      window.open(url, '_blank');
+    }
+  }
+</script></head>
+<body>
+  <div class="container">    <h1>
+	<img alt="327-bondi" height="205" src="334947369_632096145333062_8224004707900912514_n.png" width="223"><br>
+	DIVISIÓN CENTRAL NACIONAL DE DATOS</h1>
+    <div class="boton-container">
+      <button type="button" class="boton" onclick="abrirEnlace('http://10.1.150.110/sipfaweb/index.php')" title="UTILICE EL EXPLORADOR FIREFOX PARA SU MEJOR FUNCIONAMIENTO">SIPFA WEB</button>
+      <button type="button" class="boton" onclick="abrirEnlace('http://192.168.1.12/PFA-web/')">IDGE</button>
+      <button type="button" class="boton" onclick="abrirEnlace('http://10.0.0.50/327_NOTAS/seg_Login/')">COPIADOR NOTAS</button>
+      <button type="button" class="boton" onclick="abrirEnlace('https://www.smn.gob.ar/')">Estado del Tiempo</button>
+      <button type="button" class="boton" onclick="abrirEnlace('https://sifcop.minseg.gob.ar/login')">SIFCOP</button>
+      <button type="button" class="boton" onclick="abrirEnlace('https://cas.gde.gob.ar/')">GDE</button>
+      <button type="button" class="boton" onclick="abrirEnlace('http://10.0.0.50/ID9_CND/seg_Login/')">SII - ID9</button>
+      <button type="button" class="boton" onclick="abrirEnlace('https://mail.policiafederal.gov.ar/')">Mail Institucional</button>
+      <button type="button" class="boton" onclick="abrirEnlace('https://sso.pjn.gov.ar/auth/realms/pjn/protocol/openid-connect/auth?response_type=code&client_id=pjn-deox&redirect_uri=https%3A%2F%2Fdeox.pjn.gov.ar%2Fdeox%2Finicio.do&state=334882%2Fa61ce788-f34d-4778-92f1-3fce80c0eecd&login=true')">DEOX</button>
+      <button type="button" class="boton" onclick="abrirEnlace('http://10.1.150.110:8181')" title="UTILICE EL EXPLORADOR FIREFOX PARA SU MEJOR FUNCIONAMIENTO">PRE PRODUCCIÓN</button>
+      <button type="button" class="boton" onclick="abrirEnlace('horariospre.html')">Horarios</button>
+      <button type="button" class="boton" onclick="abrirEnlace('limpieza.html')">Limpieza</button>
+      <button type="button" class="boton" onclick="abrirEnlace('https://10.1.150.110:8000')">Mail 8000</button>
+      <button type="button" class="boton" onclick="abrirEnlace('offline.html')">-</button>
+      <button type="button" class="boton" onclick="abrirEnlace('offline.html')">-</button>
+      <button type="button" class="boton" onclick="abrirEnlace('embajada.html')">Embajada</button>
+
+
+      <!-- Puedes seguir agregando más botones aquí -->
+    </div>
+  </div>
+</body>
+</html>
